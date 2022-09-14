@@ -28,8 +28,9 @@ body {
 /* Globales */
 
 .contenedor {
-    max-width: 100rem;
-    width: 90%;
+    /* max-width: 100rem;
+    width: 90%; */
+    width: min(90%, 100rem);
     margin: 0 auto;
 }
 
@@ -84,6 +85,9 @@ img {
     }
 }
 
+.barra {
+    padding-top: 4rem;
+}
 @media (min-width: 768px) {
     .barra {
         display: flex;
@@ -184,4 +188,15 @@ img {
 .widget-curso__label,
 .widget-curso__info {
     font-size: 2rem;
+}
+
+.footer {
+    height: 15rem;
+    background-color: var(--negro);
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+.footer .barra {
+    padding: 0;
 }
