@@ -200,3 +200,26 @@ img {
 .footer .barra {
     padding: 0;
 }
+
+/* Sobre nosotros */
+.sobre-nosotros__texto p {
+    margin-top: 0;
+}
+@media (min-width: 768px) {
+    .sobre-nosotros {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 2rem; */
+    }
+    .sobre-nosotros__imagen,
+    .sobre-nosotros__texto {
+        flex: 0 0 calc(50% - 1rem);
+        /* flex-basis: 50%; */
+    }
+
+    /* .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+    } */
+}
